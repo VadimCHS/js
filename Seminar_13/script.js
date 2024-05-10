@@ -32,7 +32,7 @@ fullScreen.classList.add('media__full-screen');
 rangeEl.classList.add('media__range');
 
 //Добавление аттрибутов
-videoEl.setAttribute('src', './video/zakat.mp4');
+videoEl.setAttribute('src', './video/1.mp4');
 
 rangeEl.setAttribute('type', 'range');
 rangeEl.setAttribute('min', '0');
@@ -62,7 +62,6 @@ videoEl.addEventListener('timeupdate', function (e) {
 
 
 rangeVolumeEl.addEventListener('change', function (e) {
-    // console.log(e.target.value);
     videoEl.volume = e.target.value/100;
 });
 
@@ -119,15 +118,6 @@ fullScreen.addEventListener('click', function (e) {
     
 });
 
-
-// document.querySelectorAll('.range_box input').forEach(item => {
-
-//     item.addEventListener('mousemove', function() {
-
-//         this.closest('.range_box').querySelector('.rangeValue').innerHTML = this.value;
-//     })
-
-// });
 
 newDivEl.appendChild(playEl);
 newDivEl.appendChild(pauseEl);
